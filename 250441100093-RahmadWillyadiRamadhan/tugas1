@@ -1,0 +1,23 @@
+# Program interaktif menghitung nilai akhir
+
+# Meminta input nilai dari pengguna
+nilai_tugas = float(input("Masukkan nilai Tugas: "))
+nilai_uts   = float(input("Masukkan nilai UTS  : "))
+nilai_uas   = float(input("Masukkan nilai UAS  : "))
+
+# Bobot penilaian
+bobot_tugas = 0.30
+bobot_uts   = 0.30
+bobot_uas   = 0.40
+
+# Menghitung nilai akhir
+nilai_akhir = (bobot_tugas * nilai_tugas +
+               bobot_uts * nilai_uts +
+               bobot_uas * nilai_uas)
+
+# Menampilkan hasil
+print("\n=== Hasil Perhitungan ===")
+print("Nilai Tugas:", nilai_tugas)
+print("Nilai UTS  :", nilai_uts)
+print("Nilai UAS  :", nilai_uas)
+print("Nilai Akhir: {:.2f}".format(nilai_akhir))
